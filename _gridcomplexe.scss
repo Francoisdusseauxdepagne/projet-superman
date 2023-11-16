@@ -125,9 +125,28 @@
     width: 100%;
   }
 
-.box10>img:hover, .box11>img:hover, .box12>img:hover, .box13>img:hover, .box14>img:hover{
+.box11>img:hover,{
     transform: scale(1.1);
     box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.5);
+}
+
+.box10>img:hover{
+    transform: scale(1.1);
+    box-shadow:  0px 0px 20px 10px dodgerblue;
+}
+
+.box12>img:hover{
+    transform: scale(1.1);
+    box-shadow:  0px 0px 20px 10px yellow
+}
+
+.box13>img:hover{
+    transform: scale(1.1);
+    box-shadow:  0px 0px 20px 10px #02CC00;
+}
+.box14>img:hover{
+    transform: scale(1.1);
+    box-shadow:  0px 0px 20px 10px orange;
 }
 
 .flip-card{
