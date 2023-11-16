@@ -1,0 +1,40 @@
+
+.grid-simple {
+    background-color: orange;
+    display: grid;
+    grid-template-areas:
+        "un un un"
+        "deux trois trois"
+        "quatre quatre quatre";
+    border: 5px solid orange;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.item1, .item2, .item3, .item4 {
+    padding: 30px;
+    background: #fff;
+    border: 5px solid orange;
+}
+
+.item1 {
+    grid-area: un;
+
+}
+
+.item2 {
+    grid-area: deux;
+
+}
+
+.item3 {
+    grid-area: trois;
+
+}
+
+.item4 {
+    grid-area: quatre;
+
+}

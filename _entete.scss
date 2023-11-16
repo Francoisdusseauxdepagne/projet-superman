@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+}
+main {
+    background-color: #000000;
+}
+
+h2 {
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h1, h2 {
+    font-family: Agbalumo;
+}
+.entete {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 5px 15px 0px #000000;
+}
+
+.liens-entete {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3%;
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.logo {
+    width: 15%;
+}
+
+.logo img {
+    width: 50%;
+    padding-left: 30%;
+}
+
+.titreprincipale {
+    background-image: url(images/bg.png);
+    color: black;
+    padding: 2%;
+    background-position: bottom;
+    background-size: cover;
+    text-align: center;
+    font-weight: bold;
+}

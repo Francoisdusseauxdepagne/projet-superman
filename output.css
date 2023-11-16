@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+}
+
+main {
+  background-color: #000000;
+}
+
+h2 {
+  margin: 0;
+  padding: 20px;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h1, h2 {
+  font-family: Agbalumo;
+}
+
+.entete {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 5px 15px 0px #000000;
+}
+
+.liens-entete {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 3%;
+  width: 80%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.logo {
+  width: 15%;
+}
+
+.logo img {
+  width: 50%;
+  padding-left: 30%;
+}
+
+.titreprincipale {
+  background-image: url(images/bg.png);
+  color: black;
+  padding: 2%;
+  background-position: bottom;
+  background-size: cover;
+  text-align: center;
+  font-weight: bold;
+}
+
+.grid-simple {
+  background-color: orange;
+  display: grid;
+  grid-template-areas: "un un un" "deux trois trois" "quatre quatre quatre";
+  border: 5px solid orange;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.item1, .item2, .item3, .item4 {
+  padding: 30px;
+  background: #fff;
+  border: 5px solid orange;
+}
+
+.item1 {
+  grid-area: un;
+}
+
+.item2 {
+  grid-area: deux;
+}
+
+.item3 {
+  grid-area: trois;
+}
+
+.item4 {
+  grid-area: quatre;
+}
+
+.grid-complexe {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  border: 5px solid orange;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9 {
+  border: 5px solid orange;
+  background-color: #fff;
+  padding: 30px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.box1 {
+  grid-column: 1/10;
+  grid-row: 1/2;
+}
+
+.box2 {
+  grid-column: 1/3;
+  grid-row: 2/7;
+}
+
+.box3 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.box4 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.box5 {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+.box6 {
+  grid-column: 3/4;
+  grid-row: 5/6;
+}
+
+.box7 {
+  grid-column: 3/4;
+  grid-row: 6/7;
+}
+
+.box8 {
+  grid-column: 4/10;
+  grid-row: 2/7;
+}
+
+.box9 {
+  grid-column: 1/10;
+  grid-row: 7/8;
+}
+
+.Grid-content {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  background-color: #fff;
+  font-family: Roboto;
+  font-weight: bold;
+  padding-top: 2%;
+  margin-top: 0.01%;
+}
+
+.box10 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.box11 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.box12 {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+
+.box13 {
+  grid-column: 4/5;
+  grid-row: 4/5;
+}
+
+.box14 {
+  grid-column: 4/5;
+  grid-row: 5/6;
+}
+
+.box15 {
+  grid-column: 1/4;
+  grid-row: 1/6;
+}
+
+.box16 {
+  grid-column: 5/10;
+  grid-row: 1/6;
+  margin-top: 8%;
+}
+
+.box10 > img, .box11 > img, .box12 > img, .box13 > img, .box14 > img {
+  width: 60%;
+  border-radius: 90%;
+}
+
+.box16 > video {
+  width: 100%;
+}
+
+.box15 > img {
+  width: 80%;
+}
+
+.box10 > img:hover, .box11 > img:hover, .box12 > img:hover, .box13 > img:hover, .box14 > img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  transition: 2s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 3%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front > img {
+  width: 100%;
+}
+
+.flip-card-front {
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(252, 0, 0) 100%);
+  margin: 5%;
+}
+
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: bold;
+  overflow: scroll;
+  font-size: 1.5em;
+  margin: -5%;
+  padding: 0%;
+}
+
+/*# sourceMappingURL=output.css.map */
